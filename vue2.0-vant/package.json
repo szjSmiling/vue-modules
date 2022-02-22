@@ -1,0 +1,69 @@
+{
+  "name": "vue-vant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "使用vant开发的基于vue2.0的移动端多页面项目架构",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build --report"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "lodash": "^4.17.20",
+    "vant": "^2.9.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.1",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.0",
+    "@vue/cli-plugin-eslint": "^4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "amfe-flexible": "^2.2.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.12.2",
+    "less-loader": "^6.2.0",
+    "postcss-pxtorem": "^5.1.1",
+    "style-resources-loader": "^1.3.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-pxtorem": {
+        "rootValue": 36,
+        "unitPrecision": 5,
+        "minPixelValue": 10,
+        "propList": [
+          "*"
+        ],
+        "selectorBlackList": [
+          ".ignore-"
+        ],
+        "exclude": "/node_modules/i"
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
