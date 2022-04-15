@@ -20,4 +20,4 @@
 >新增Fragment, Teleport, Suspense组件
 
 ### 使用的插件
-1. npm install vant@next -S
+1. yarn install vant@next

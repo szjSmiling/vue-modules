@@ -11,6 +11,7 @@
         <router-view></router-view>
       </keep-alive>
       <router-view v-else></router-view>
+      <szj-footer :title="'404-footer'" />
     </div>
   </transition>
 </template>

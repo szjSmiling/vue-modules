@@ -7,11 +7,11 @@
 <template>
   <div class="container">
     <img class="iw-logo" :src="require('@assets/images/logo.png')" alt="vant" >
-    <div class="">
+    <div class="btn-groups">
       <van-button id="signin-google-button">google sign in</van-button>
       <van-button id="signin-fb-button">facebook sign in</van-button>
       <van-button id="signin-apple-button">apple sign in</van-button>
-      <div id="my-signin2" alt="谷歌自动生成登录按钮"></div>
+      <div id="my-signin2" alt="谷歌自动生成登录按钮" style="display:flex;justify-content:center;"></div>
     </div>
   </div>
 </template>
@@ -38,13 +38,10 @@ export default {
      * signinWithFacebook('signin-fb-button'), 加载facebook登陆的sdk, 初始化执行环境, 通过id绑定事件
      * signinWithApple('signin-apple-button'), 手动点击 apple 登录
      */
-    signinWithGoogle(1, 'signin-google-button')
-    signinWithGoogle(2, 'my-signin2')
+    signinWithGoogle(1, 'signin-google-button') // 先加载登录api
+    // signinWithGoogle(2, 'my-signin2')
     signinWithFacebook('signin-fb-button')
     signinWithApple('signin-apple-button')
-  },
-  methods: {
-    
   }
 }
 </script>
@@ -52,5 +49,17 @@ export default {
 *{text-align: center;}
 .iw-logo{
   opacity: 0.5;
+}
+.btn-groups{
+  margin: 0 16px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  button{
+    margin-top: 16px;
+  }
+  #my-signin2{
+    margin-top: 16px;
+  }
 }
 </style>
