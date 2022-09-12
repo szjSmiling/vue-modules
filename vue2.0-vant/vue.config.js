@@ -56,7 +56,7 @@ module.exports = {
     // index: 'home.html', // 指定页面入口, 多页面且首页不是index.html时需要
     host: proxy().localHost,
     port: proxy().localPort,
-    open: true,
+    // open: true,
     https: false,
     hot: true, // 启动 HMR 热更新, 某些模块无法热更新时, 刷新页面
     hotOnly: false, // 某些模块无法热更新时, 不刷新页面, 控制台输出报错
